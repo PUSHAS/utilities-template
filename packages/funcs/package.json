@@ -1,0 +1,36 @@
+{
+	"name": "@pushas/funcs",
+	"version": "0.1.0",
+	"description": "A variety of utility functions.",
+	"author": "@pushas",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"browser": "dist/index.umd.js",
+	"unpkg": "dist/index.umd.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.js"
+	},
+	"sideEffects": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PUSHAS/utilities-template.git",
+		"directory": "packages/funcs"
+	},
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint src tests --ext ts --fix -c ../../.eslintrc",
+		"build": "rollup -c",
+		"start": "yarn build -w",
+		"prepublishOnly": "yarn build"
+	},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"publishConfig": {
+		"access": "public"
+	}
+}

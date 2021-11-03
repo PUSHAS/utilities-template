@@ -1,0 +1,13 @@
+{
+	"extends": "marine/prettier/node",
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json",
+		"extraFileExtensions": [".mjs"]
+	},
+	"rules": {
+		"comma-dangle": ["error", "always-multiline"],
+		"@typescript-eslint/restrict-template-expressions": "off",
+		"@typescript-eslint/no-base-to-string": "off",
+		"@typescript-eslint/naming-convention": "off"
+	}
+}
